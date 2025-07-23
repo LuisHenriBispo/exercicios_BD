@@ -26,15 +26,16 @@ INSERT INTO tb_colaborador
 ("Alceu", '1999-03-17', "alceu@email.com", "11 54549-4445", "Brasileiro", "Desenvolvedor front-end", 3500.00),
 ("Fabiola", '2004-08-26', "fabiola011@email.com", "11 88888-8888", "Brasileira", "Desenvolvedor back-end", 4000.00),
 ("Paula", '1999-08-18', "paulinhavieira@email.com", "11 1111-2222", "Brasileira", "Gerente de Projetos", 7000.00),
-("Larissa", '2003-02-02', "lari@email.com", "11 22222-2222", "Brasileira", "Estagiaria", 2500.00);
+("Larissa", '2003-02-02', "lari@email.com", "11 22222-2222", "Brasileira", "Estagiaria", 2500.00),
+("João", '2006-11-12', "joaopedro@email.com", "11 33333-3333", "Brasileiro", "Jovem Aprendiz", 1200.00);
 
--- SALARIO MAIOR QUE 3500
-SELECT * FROM tb_colaborador WHERE salarioColaborador > 3500;
+-- SALARIO MAIOR QUE 2000
+SELECT * FROM tb_colaborador WHERE salarioColaborador > 2000;
 
--- SALARIO MENOR QUE 3500
-SELECT * FROM tb_colaborador WHERE salarioColaborador < 3500;
+-- SALARIO MENOR QUE 2000
+SELECT * FROM tb_colaborador WHERE salarioColaborador < 2000;
 
 -- ATUALIZANDO O SALARIO
 UPDATE tb_colaborador
-SET salarioColaborador = 3000.00
-WHERE idColaborador = 5;
+SET salarioColaborador = 1500.00
+WHERE idColaborador = 6;
